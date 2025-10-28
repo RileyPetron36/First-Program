@@ -1,14 +1,12 @@
 # Program to calculate a student's average and determine approval status
 
 def get_exam_scores():
-    try:
+
       score_a = float(input("Enter the score for Exam A: "))
       score_b = float(input("Enter the score for Exam B: "))
       score_c = float(input("Enter the score for Exam C: "))
       return score_a, score_b, score_c
-    except ValueError:
-      print("Invalid input. Please enter numerical values for the exam scores.")
-
+    
 def calculate_average(scores):
 
   return sum(scores) / len(scores)
